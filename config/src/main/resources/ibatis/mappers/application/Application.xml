@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Application">
+<insert id="create" useGeneratedKeys="true" keyProperty="id" >
+	insert into t_app (appKey,secret) values (#{appKey},#{secret})
+</insert>
+<select id="get" resultType="cn.orgid.funny.config.domain.model.app.Application">
+    select * from t_app where id = #{id}
+</select>
+<delete id="delete">
+	delete from t_app where id = #{id}
+</delete>
+<update id="update">
+	update t_app set appKey=#{appKey},secret=#{secret} where id=#{id}
+</update>
+<select id="select" resultType="cn.orgid.funny.config.domain.model.app.Application">
+	select * from t_app 
+	<where>
+	<if test="appKey">
+		appKey=#{appKey}
+	</if>
+	<if test="secret">
+		and secret=#{secret}
+	</if>
+	</where> 
+</select>
+</mapper>
