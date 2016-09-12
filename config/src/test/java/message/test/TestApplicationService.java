@@ -6,15 +6,14 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import cn.orgid.common.security.EncrypUtil;
 import cn.orgid.funny.config.domain.component.AccessTokenThreadLocalComponent;
-import cn.orgid.funny.config.domain.dao.app.ApplicationDAO;
 import cn.orgid.funny.config.domain.model.app.AccessToken;
 import cn.orgid.funny.config.domain.model.app.Application;
 import cn.orgid.funny.config.domain.model.config.ConfigField;
 import cn.orgid.funny.config.domain.model.config.ConfigGroup;
 import cn.orgid.funny.config.domain.service.ApplicationService;
 import cn.orgid.funny.config.domain.service.ConfigService;
+import cn.orgid.funny.config.domain.util.EncrypUtil;
 
 public class TestApplicationService extends TestBase {
 	
