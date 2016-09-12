@@ -3,10 +3,10 @@ package cn.orgid.funny.config.domain.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import cn.orgid.common.exception.ApplicationException;
 import cn.orgid.funny.config.domain.component.AccessTokenThreadLocalComponent;
 import cn.orgid.funny.config.domain.dao.app.AccessTokenDAO;
 import cn.orgid.funny.config.domain.dao.app.ApplicationDAO;
+import cn.orgid.funny.config.domain.exception.ApplicationException;
 import cn.orgid.funny.config.domain.model.app.AccessToken;
 import cn.orgid.funny.config.domain.model.app.Application;
 

@@ -1,10 +1,8 @@
 package cn.orgid.funny.config.domain.model.config;
 
-
-
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import cn.orgid.common.model.ModelBase;
+import cn.orgid.funny.config.domain.model.base.ModelBase;
 
 @Entity
 @Table(name="t_config_group")

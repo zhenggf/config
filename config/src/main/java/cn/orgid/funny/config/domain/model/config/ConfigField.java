@@ -4,8 +4,8 @@ import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import cn.orgid.common.model.BooleanConverter;
-import cn.orgid.common.model.ModelBase;
+import cn.orgid.funny.config.domain.model.base.BooleanConverter;
+import cn.orgid.funny.config.domain.model.base.ModelBase;
 
 @Entity
 @Table(name="t_config_field")

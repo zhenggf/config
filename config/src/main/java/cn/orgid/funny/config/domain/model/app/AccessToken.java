@@ -7,10 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import cn.orgid.common.exception.ApplicationException;
-import cn.orgid.common.model.ModelBase;
-import cn.orgid.common.security.EncrypUtil;
-import cn.orgid.common.util.MD5;
+
+
+
+import cn.orgid.funny.config.domain.exception.ApplicationException;
+import cn.orgid.funny.config.domain.model.base.ModelBase;
 
 @Entity
 @Table(name="t_access_token")

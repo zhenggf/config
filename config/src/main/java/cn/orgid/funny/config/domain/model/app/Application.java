@@ -6,8 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import cn.orgid.common.model.ModelBase;
-import cn.orgid.common.security.EncrypUtil;
+import cn.orgid.funny.config.domain.model.base.ModelBase;
+import cn.orgid.funny.config.domain.util.EncrypUtil;
 
 @Entity
 @Table(name = "t_app")
